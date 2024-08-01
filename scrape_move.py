@@ -51,15 +51,15 @@ def scrape_move(move_name: str):
             print(attack_power)
             # 10-25 1d4 avg 2
             # 30-45 2d4 avg 4
-            # 50-65 3d6 avg 9
-            # 70-85 4d6 avg 12
-            # 90-105 5d8 avg 20
-            # 110-125 5d10 avg 25
-            # 130-145 5d12 avg 30
-            # 150-160 6d12 avg 36
-            # 180 8d12 avg avg 48
-            # 200 9d12 avg 54
-            # 250 10d12 avg 60
+            # 50-65 2d6 avg 6
+            # 70-85 3d6 avg 9
+            # 90-105 3d8 avg 12
+            # 110-125 4d8 avg 16
+            # 130-145 4d10 avg 20
+            # 150-160 5d10 avg 25
+            # 180 5d12 avg avg 30
+            # 200 6d12 avg 36
+            # 250 7d12 avg 42
             power_thresholds = [25, 45, 65, 85, 105, 125, 145, 160, 180, 200, 250]
             power_map = ["1d4", "2d4", "3d6", "4d6", "5d8", "5d10", "5d12", "6d12", "8d12", "10d12", "12d12"]
             for i in range(len(power_thresholds)):
