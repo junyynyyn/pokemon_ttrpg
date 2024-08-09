@@ -48,7 +48,6 @@ def scrape_move(move_name: str):
 
             # Getting Move Power and converting to dice
             attack_power = attack_info[3].find_all('td')[1].text.strip()
-            print(attack_power)
             # 10-25 1d4 avg 2
             # 30-45 2d4 avg 4
             # 50-65 2d6 avg 6
@@ -79,4 +78,4 @@ def scrape_move(move_name: str):
     return
 
 if __name__ == "__main__":
-    scrape_move("Fire Blast");
+    scrape_move("Fire Blast")
